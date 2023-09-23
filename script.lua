@@ -66,6 +66,8 @@ end)
 
 MoveSection:NewToggle("Sit", "Sit", function(state)
     if state then
+	game.Players.LocalPlayer.Character.Head.CanCollide = true
+        game.Players.LocalPlayer.Character.Torso.CanCollide = true
         game.Players.LocalPlayer.Character.Humanoid.Sit = true
     else
         game.Players.LocalPlayer.Character.Humanoid.Sit = false
